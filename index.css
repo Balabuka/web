@@ -428,7 +428,8 @@ p {
 }
 
 /* For mobile phones */
-  @media (max-width: 500px) {
+
+ @media (max-width: 500px) {
   .navigation {
     display: flex;
     flex-direction: row;
@@ -477,33 +478,21 @@ p {
   }
 }
 
-@media (max-width: 360px) {
-  .navigation {
-    gap: 0.2rem;
-    padding: 0 2px;
-  }
-  .navigation li {
-    font-size: 12px;
-    padding: 4px 0;
-  }
-  .mainh {
-    font-size: 20px;
-  }
-  .pmain {
-    font-size: 12px;
-  }
-  .main-form,
-  form {
-    padding: 0.5rem;
-    max-width: 98vw;
-  }
-  input,
-  button { 
-    width: 96vw;
-    font-size: 0.9rem;
-  }
-  .footer-links {
-    column-count: 1;
-    padding: 0.5rem 0;
-  }
-}
+ @media (max-width: 389px) {
+    .navigation {
+    }
+    .navigation li {
+        flex: 1 1 auto;
+        text-align: center;
+        padding: 8px 0;
+    }
+    .navigation a {
+        font-size: 12px;
+    }
+    .mainh {
+        font-size: 24px;
+    }
+    .pmain {
+        font-size: 14px;
+    }
+ }
